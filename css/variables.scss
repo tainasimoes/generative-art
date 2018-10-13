@@ -1,0 +1,14 @@
+$img: '../assets/images/';
+
+$white: #ffffff;
+$black: #000000;
+
+@function responsive($value1, $value2, $width1: 320, $width2: 1920) {
+  $x1: $width1;
+  $x2: $width2;
+  $y1: $value1;
+  $y2: $value2;
+  $a: ($y2 - $y1) / ($x2 - $x1);
+  $b: ($x2 * $y1 - $x1 * $y2) / ($x2 - $x1);
+  @return calc(#{$a * 100vw} + #{$b * 1px});
+}

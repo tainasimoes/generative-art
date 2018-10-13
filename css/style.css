@@ -1,0 +1,105 @@
+* {
+	padding: 0;
+	margin: 0
+}
+
+body {
+	background-color: black;
+	font-family: 'Roboto Mono', monospace;
+	color: #fff;
+	font-weight: 300;
+	overflow-x: hidden;
+	width: 100%;
+}
+
+
+header {
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+  grid-gap: 5px 20px;
+  margin: 80px 60px 120px;
+}
+
+header h1 {
+	grid-column-start: 1;
+	grid-column-end: 3;
+	font-weight: 300;
+	font-size: 3vw;
+}
+
+header p {
+	font-size: 1.2vw;
+  grid-column-start: 1;
+	grid-column-end: 3;
+}
+
+
+section {
+	display: grid;
+	grid-template-columns: repeat(4, auto);
+	grid-gap: 40px 20px;
+	margin: 0 60px 100px;
+}
+
+section h2 {
+	grid-column-start: 1;
+  grid-column-end: 5;
+  font-weight: 300;
+  font-size: 1.5vw;
+}
+
+section article {
+	width: 21vw;
+	height: 30vw;
+}
+
+section article .canvas {
+	text-decoration: none;
+	color: #fff;
+	border: 1px solid #fff;
+	height: 90%;
+
+	display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+section article .canvas.code {
+	font-size: 1.2vw;
+	color: #fff;
+	padding: 0 20px;
+	display: flex;
+	flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  pointer-events: none;
+}
+
+section article h3 {
+	height: 10%;
+  padding: 10px 0;
+  font-weight: 300;
+  font-size: 1.2vw;
+}
+
+footer {
+	width: 100%;
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+  grid-gap: 20px;
+  margin: 120px 60px 80px;
+}
+
+footer p {
+	grid-column-start: 1;
+	grid-column-end: 3;
+	font-size: 1.2vw;
+}
+
+svg {
+	background-color: #000;
+}
+
+
+
+

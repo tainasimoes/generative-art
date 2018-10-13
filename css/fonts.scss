@@ -1,0 +1,21 @@
+$fonts: '../assets/fonts/';
+
+@font-face {
+  font-family: Karbon;
+  src: url($fonts + 'KarbonRegular.eot');
+  src: url($fonts + 'KarbonRegular.eot?#iefix') format('embedded-opentype'),
+       url($fonts + 'KarbonRegular.woff') format("woff"),
+       url($fonts + 'KarbonRegular.woff2') format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Karbon;
+  src: url($fonts + 'KarbonBold.eot');
+  src: url($fonts + 'KarbonBold.eot?#iefix') format('embedded-opentype'),
+       url($fonts + 'KarbonBold.woff') format("woff"),
+       url($fonts + 'KarbonBold.woff2') format("woff2");
+  font-weight: bold;
+  font-style: normal;
+}
