@@ -5,14 +5,14 @@
   <?php for($i = 1; $i <= 13; $i++){ ?>
     <rect
       id="rect<?php echo $i ?>"
-      x="<?php echo (0 + (12.5 * $i)); ?>"
-      y="<?php echo (0 + (12.5 * $i)); ?>"
+      x="<?php echo ((12.5 * $i)); ?>"
+      y="<?php echo ((12.5 * $i)); ?>"
       width="<?php echo (400 - (25 * $i)); ?>"
       height="<?php echo (400 - (25 * $i)); ?>"
       stroke="#0ff"
       fill="#000"
       transform="rotate(<?php echo (10 * $i)?>)"
-      style="transform-origin: center;"
+      transform-origin="center"
     />
     <animateTransform 
       xlink:href="#rect<?php echo $i ?>"
@@ -24,8 +24,7 @@
       begin="0s"
       fill="freeze"
       repeatCount="indefinite"
-      values="<?php echo (-15 * $i)?>; <?php echo (15 * $i)?>; <?php echo (-15 * $i)?>"
-      id="anime-rect<?php echo $i ?>"
+      values="<?php echo (-10 * $i)?>; <?php echo (10 * $i)?>; <?php echo (-10 * $i)?>"
     />
   <?php }?>
 

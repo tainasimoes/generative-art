@@ -1,13 +1,10 @@
-<svg
-  height="100%"
-  width="100%"
->
+<svg viewBox="0 0 300 300">
   <?php for($i = 1; $i <= 7; $i++){ ?>
     <ellipse 
       cx="50%"
       cy="<?php echo (95 - (5 * $i)) ?>%"
       rx="<?php echo (90 - (10 * $i)) ?>"
-      ry="<?php echo (20 - (2*$i)) ?>"
+      ry="<?php echo (20 - (2 * $i)) ?>"
       stroke="#ff0"
       fill="none"
       id="ellipsebottom<?php echo $i ?>"

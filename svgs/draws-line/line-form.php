@@ -1,7 +1,4 @@
-<svg
-  height="100%"
-  width="100%"
->
+<svg viewBox="0 0 300 300">
   <line
     x1="10%"
     y1="50%"

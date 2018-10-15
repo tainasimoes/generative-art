@@ -1,7 +1,4 @@
-<svg
-  height="100%"
-  width="100%"
->
+<svg viewBox="0 0 300 300">
   <?php for($i = 0; $i <= 24; $i++){ ?>
     <line
       x1="10%"
@@ -9,8 +6,8 @@
       x2="90%"
       y2="50%"
       stroke="#f0f"
-      transform="rotate(<?php echo (0 + (15 * $i))?>)";
-      style="transform-origin: center"
+      transform="rotate(<?php echo (15 * $i) ?>)";
+      transform-origin="center"
     />
   <?php } ?>
 </svg>

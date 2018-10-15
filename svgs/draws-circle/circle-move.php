@@ -1,7 +1,4 @@
-<svg
-  width="100%"
-  height="100%"
->
+<svg viewBox="0 0 300 300">
   <?php for($i = 1; $i <= 12; $i++){ ?>
     <circle 
       cx="<?php echo (50 - (3 * $i)) ?>%"

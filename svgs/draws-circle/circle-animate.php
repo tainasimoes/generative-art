@@ -1,7 +1,4 @@
-<svg
-  width="100%"
-  height="100%"
->
+<svg viewBox="0 0 300 300">
   <?php for($i = 0; $i <= 12; $i++){ ?>
     <circle 
       cx="<?php echo (50 - (3 * $i)) ?>%"
@@ -14,24 +11,20 @@
     <animate
       xlink:href="#circle<?php echo $i ?>"
       attributeName="cx"
-      from="<?php echo (50 - (3 * $i)) ?>%"
-      to="<?php echo (50 + (5 * $i))?>%" 
       dur="5s"
       begin="0s"
       fill="freeze"
       repeatCount="indefinite"
-      values="<?php echo (50 - (3 * $i)) ?>%; <?php echo (50 + (5 * $i))?>%; <?php echo (50 + (5 * $i))?>%; <?php echo (50 - (3 * $i)) ?>%"
+      values="<?php echo (50 - (3 * $i)) ?>%; <?php echo (50 + (5 * $i))?>%; <?php echo (50 - (3 * $i)) ?>%"
     />
     <animate
       xlink:href="#circle<?php echo $i ?>"
       attributeName="cy"
-      from="<?php echo (50 - (5 * $i)) ?>%"
-      to="<?php echo (50 + (5 * $i))?>%" 
       dur="5s"
       begin="2s"
       fill="freeze"
       repeatCount="indefinite"
-      values="<?php echo (50 - (3 * $i)) ?>%; <?php echo (50 + (5 * $i))?>%; <?php echo (50 + (5 * $i))?>%; <?php echo (50 - (3 * $i)) ?>%"
+      values="<?php echo (50 - (3 * $i)) ?>%; <?php echo (50 + (4 * $i))?>%; <?php echo (50 - (3 * $i)) ?>%"
     />
     />
   <?php } ?>

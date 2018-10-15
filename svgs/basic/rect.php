@@ -1,25 +1,18 @@
-<svg
-	viewBox="0 0 400 400"
-  height="100%"
-  width="100%"
->
-  <!-- Simple rect element -->
+<svg viewBox="0 0 300 300">
   <rect 
-  	x="20"
-  	y="20"
-  	width="100"
-  	height="100"
+  	x="30%"
+  	y="0%"
+  	width="40%"
+  	height="40%"
   	stroke="#ff0"
   />
-
-  <!-- Rounded corner rect element -->
   <rect 
-  	x="70"
-  	y="140"
-  	width="100"
-  	height="100"
-  	rx="15"
-  	ry="15"
+  	x="30%"
+  	y="55%"
+  	width="40%"
+  	height="40%"
+  	rx="10%"
+  	ry="10%"
   	stroke="#fff"
   />
 </svg>

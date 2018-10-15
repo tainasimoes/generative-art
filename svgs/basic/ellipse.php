@@ -1,8 +1,4 @@
-<svg
-  viewBox="0 0 400 400"
-  height="100%"
-  width="100%"
->
+<svg viewBox="0 0 300 300">
   <ellipse 
     cx="50%"
     cy="50%"
