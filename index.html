@@ -1,0 +1,656 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"/>
+  <title>Arte Generativa - SVG e CSS</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Mono:300,400" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="css/style.css"/>
+</head>
+<body>
+
+  <header>
+    <h1>Arte Generativa</h1>
+    <p>[SVG e CSS]</p>
+  </header>
+
+  <div>
+    <h2>Shapes Básicos</h2>
+    <section>
+      <article>
+        <a class="canvas" href="svgs/basic/circle.php" target="_blank">
+          <svg viewBox="0 0 300 300">
+            <circle 
+              cx="50%" 
+              cy="50%" 
+              r="60" 
+              fill="none"
+              stroke="#ff0"
+            />
+          </svg>
+        </a>
+        <h3>&lt;circle&gt;</h3>
+      </article>
+      <article>
+        <a class="canvas" href="svgs/basic/ellipse.php" target="_blank">
+          <svg viewBox="0 0 300 300">
+            <ellipse 
+              cx="50%"
+              cy="50%"
+              rx="50"
+              ry="100"
+              stroke="#ff0"
+            />
+          </svg>
+        </a>
+        <h3>&lt;ellipse&gt;</h3>
+      </article>
+      <article>
+        <a class="canvas" href="svgs/basic/line.php" target="_blank">
+          <svg viewBox="0 0 300 300">
+            <line
+              x1="10%"
+              y1="10%"
+              x2="90%"
+              y2="90%"
+              stroke="#ff0" 
+            />
+          </svg>
+        </a>
+        <h3>&lt;line&gt;</h3>
+      </article>
+      <article>
+        <a class="canvas" href="svgs/basic/rect.php" target="_blank">
+          <svg viewBox="0 0 300 300">
+            <rect 
+              x="30%"
+              y="0%"
+              width="40%"
+              height="40%"
+              stroke="#ff0"
+            />
+            <rect 
+              x="30%"
+              y="55%"
+              width="40%"
+              height="40%"
+              rx="10%"
+              ry="10%"
+              stroke="#fff"
+            />
+          </svg>
+        </a>
+        <h3>&lt;rect&gt;</h3>
+      </article>
+      <article>
+        <a class="canvas" href="svgs/basic/polygon.php" target="_blank">
+          <svg viewBox="0 0 300 300">
+            <polygon 
+              points="50,150 150,150 100,50"
+              stroke="#fff"
+              transform="translate(50, -30)"
+            />
+            <polygon 
+              points="50,150  150,150  150,50, 100,50"
+              stroke="#fff"
+              transform="translate(50, 100)"
+            />
+          </svg>
+        </a>
+        <h3>&lt;polygon&gt;</h3>
+      </article>
+      <article>
+        <a class="canvas" href="svgs/basic/polyline.php" target="_blank">
+          <svg viewBox="0 0 300 300">
+            <polyline
+              points="50,150  150,150  150,50, 100,0"
+              stroke="#fff"
+              transform="translate(50, 50)"
+            />
+          </svg>
+        </a>
+        <h3>&lt;polyline&gt;</h3>
+      </article>
+    </section>
+  </div>
+  
+  <div>
+    <h2>Atributos SVG</h2>
+    <section>
+      <article>
+        <a class="canvas code" href="javascript:void(0);" target="_blank">
+          id="simbol" </br>
+          class="circle" </br>
+          style="fill: #f0f" </br>
+        </a>
+        <h3>Atributos Genericos</h3>
+      </article>
+
+      <article>
+        <a class="canvas" href="svgs/basic/circle.php" target="_blank">
+          <svg viewBox="0 0 300 300">
+            <circle
+              id="simbol"
+              class="circle"
+              style="fill: #f0f"
+              cx="50%" 
+              cy="50%" 
+              r="60" 
+              stroke="none"
+            />
+          </svg>
+        </a>
+        <h3>Atributos Genericos</h3>
+      </article>
+
+      <article>
+        <a class="canvas code" href="javascript:void(0);" target="_blank">
+          fill,</br>
+          fill-opacity,</br>
+          opacity,</br>
+          stroke,</br>
+          stroke-dasharray,</br>
+          stroke-dashoffset,</br>
+          stroke-linecap,</br>
+          stroke-opacity,</br>
+          stroke-width</br>
+          transform
+        </a>
+        <h3>Mais Atributos</h3>
+      </article>
+
+      <article>
+        <a class="canvas" href="svgs/basic/circle.php" target="_blank">
+          <svg viewBox="0 0 300 300">
+            <circle
+              cx="50%" 
+              cy="50%" 
+              r="60" 
+              stroke="#0ff"
+              stroke-width="4"
+              stroke-dasharray="4"
+              stroke-linecap="unset";
+              stroke-dashoffset="6";
+              stroke-opacity=".6";
+            />
+          </svg>
+        </a>
+        <h3>Mais Atributos</h3>
+      </article>
+    </section>
+  </div>
+
+  <div>
+    <h2>Formas, Desenhos e Movimentos - Retangulo</h2>
+    <section>
+      <article>
+        <a class="canvas" href="svgs/draws-rect/rect-form.php" target="_blank">
+          <svg viewBox="0 0 400 400">
+            <rect 
+  	          x="25"
+  	          y="25"
+  	          width="350"
+  	          height="350"
+  	          stroke="#fff"
+            />
+          </svg>
+        </a>
+        <h3>Forma</h3>
+      </article>
+
+      <article>
+        <a class="canvas" href="svgs/draws-rect/rect-draw.php" target="_blank">
+          <svg viewBox="0 0 400 400">
+            <rect x="12.5" y="12.5" width="375" height="375" stroke="#f0f" fill="none"></rect>
+            <rect x="25" y="25" width="350" height="350" stroke="#f0f" fill="none"></rect>
+            <rect x="37.5" y="37.5" width="325" height="325" stroke="#f0f" fill="none"></rect>
+            <rect x="50" y="50" width="300" height="300" stroke="#f0f" fill="none"></rect>
+            <rect x="62.5" y="62.5" width="275" height="275" stroke="#f0f" fill="none"></rect>
+            <rect x="75" y="75" width="250" height="250" stroke="#f0f" fill="none"></rect>
+            <rect x="87.5" y="87.5" width="225" height="225" stroke="#f0f" fill="none"></rect>
+            <rect x="100" y="100" width="200" height="200" stroke="#f0f" fill="none"></rect>
+            <rect x="112.5" y="112.5" width="175" height="175" stroke="#f0f" fill="none"></rect>
+            <rect x="125" y="125" width="150" height="150" stroke="#f0f" fill="none"></rect>
+            <rect x="137.5" y="137.5" width="125" height="125" stroke="#f0f" fill="none"></rect>
+            <rect x="150" y="150" width="100" height="100" stroke="#f0f" fill="none"></rect>
+            <rect x="162.5" y="162.5" width="75" height="75" stroke="#f0f" fill="none"></rect>
+          </svg>
+        </a>
+        <h3>Desenho</h3>
+      </article>
+      <article>
+        <a class="canvas" href="svgs/draws-rect/rect-move.php" target="_blank">
+          <svg viewBox="0 0 400 400" style="padding: 20px;">
+            <rect x="12.5" y="12.5" width="375" height="375" stroke="#ff0" fill="#000" transform-origin="center" transform="rotate(10)"></rect>
+            <rect x="25" y="25" width="350" height="350" stroke="#ff0" fill="#000" transform-origin="center" transform="rotate(20)"></rect>
+            <rect x="37.5" y="37.5" width="325" height="325" stroke="#ff0" fill="#000" transform-origin="center" transform="rotate(30)"></rect>
+            <rect x="50" y="50" width="300" height="300" stroke="#ff0" fill="#000" transform-origin="center" transform="rotate(40)"></rect>
+            <rect x="62.5" y="62.5" width="275" height="275" stroke="#ff0" fill="#000" transform-origin="center" transform="rotate(50)"></rect>
+            <rect x="75" y="75" width="250" height="250" stroke="#ff0" fill="#000" transform-origin="center" transform="rotate(60)"></rect>
+            <rect x="87.5" y="87.5" width="225" height="225" stroke="#ff0" fill="#000" transform-origin="center" transform="rotate(70)"></rect>
+            <rect x="100" y="100" width="200" height="200" stroke="#ff0" fill="#000" transform-origin="center" transform="rotate(80)"></rect>
+            <rect x="112.5" y="112.5" width="175" height="175" stroke="#ff0" fill="#000" transform-origin="center" transform="rotate(90)"></rect>
+            <rect x="125" y="125" width="150" height="150" stroke="#ff0" fill="#000" transform-origin="center" transform="rotate(100)"></rect>
+            <rect x="137.5" y="137.5" width="125" height="125" stroke="#ff0" fill="#000" transform-origin="center" transform="rotate(110)"></rect>
+            <rect x="150" y="150" width="100" height="100" stroke="#ff0" fill="#000" transform-origin="center" transform="rotate(120)"></rect>
+            <rect x="162.5" y="162.5" width="75" height="75" stroke="#ff0" fill="#000" transform-origin="center" transform="rotate(130)"></rect>
+          </svg>
+        </a>
+        <h3>Movimento</h3>
+      </article>
+
+      <article>
+        <a class="canvas" href="svgs/draws-rect/rect-animate.php" target="_blank">
+          <svg viewBox="0 0 400 400" style="padding: 20px;">
+            <rect id="rect1" x="12.5" y="12.5" width="375" height="375" stroke="#0ff" fill="#000" transform="rotate(10)" transform-origin="center"></rect>
+            <animateTransform xlink:href="#rect1" attributeName="transform" type="rotate" from="0" to="10" dur="15s" begin="0s" fill="freeze" repeatCount="indefinite" values="-10; 10; -10"></animateTransform>
+            <rect id="rect2" x="25" y="25" width="350" height="350" stroke="#0ff" fill="#000" transform="rotate(20)" transform-origin="center"></rect>
+            <animateTransform xlink:href="#rect2" attributeName="transform" type="rotate" from="0" to="20" dur="15s" begin="0s" fill="freeze" repeatCount="indefinite" values="-20; 20; -20"></animateTransform>
+            <rect id="rect3" x="37.5" y="37.5" width="325" height="325" stroke="#0ff" fill="#000" transform="rotate(30)" transform-origin="center"></rect>
+            <animateTransform xlink:href="#rect3" attributeName="transform" type="rotate" from="0" to="30" dur="15s" begin="0s" fill="freeze" repeatCount="indefinite" values="-30; 30; -30"></animateTransform>
+            <rect id="rect4" x="50" y="50" width="300" height="300" stroke="#0ff" fill="#000" transform="rotate(40)" transform-origin="center"></rect>
+            <animateTransform xlink:href="#rect4" attributeName="transform" type="rotate" from="0" to="40" dur="15s" begin="0s" fill="freeze" repeatCount="indefinite" values="-40; 40; -40"></animateTransform>
+            <rect id="rect5" x="62.5" y="62.5" width="275" height="275" stroke="#0ff" fill="#000" transform="rotate(50)" transform-origin="center"></rect>
+            <animateTransform xlink:href="#rect5" attributeName="transform" type="rotate" from="0" to="50" dur="15s" begin="0s" fill="freeze" repeatCount="indefinite" values="-50; 50; -50"></animateTransform>
+            <rect id="rect6" x="75" y="75" width="250" height="250" stroke="#0ff" fill="#000" transform="rotate(60)" transform-origin="center"></rect>
+            <animateTransform xlink:href="#rect6" attributeName="transform" type="rotate" from="0" to="60" dur="15s" begin="0s" fill="freeze" repeatCount="indefinite" values="-60; 60; -60"></animateTransform>
+            <rect id="rect7" x="87.5" y="87.5" width="225" height="225" stroke="#0ff" fill="#000" transform="rotate(70)" transform-origin="center"></rect>
+            <animateTransform xlink:href="#rect7" attributeName="transform" type="rotate" from="0" to="70" dur="15s" begin="0s" fill="freeze" repeatCount="indefinite" values="-70; 70; -70"></animateTransform>
+            <rect id="rect8" x="100" y="100" width="200" height="200" stroke="#0ff" fill="#000" transform="rotate(80)" transform-origin="center"></rect>
+            <animateTransform xlink:href="#rect8" attributeName="transform" type="rotate" from="0" to="80" dur="15s" begin="0s" fill="freeze" repeatCount="indefinite" values="-80; 80; -80"></animateTransform>
+            <rect id="rect9" x="112.5" y="112.5" width="175" height="175" stroke="#0ff" fill="#000" transform="rotate(90)" transform-origin="center"></rect>
+            <animateTransform xlink:href="#rect9" attributeName="transform" type="rotate" from="0" to="90" dur="15s" begin="0s" fill="freeze" repeatCount="indefinite" values="-90; 90; -90"></animateTransform>
+            <rect id="rect10" x="125" y="125" width="150" height="150" stroke="#0ff" fill="#000" transform="rotate(100)" transform-origin="center"></rect>
+            <animateTransform xlink:href="#rect10" attributeName="transform" type="rotate" from="0" to="100" dur="15s" begin="0s" fill="freeze" repeatCount="indefinite" values="-100; 100; -100"></animateTransform>
+            <rect id="rect11" x="137.5" y="137.5" width="125" height="125" stroke="#0ff" fill="#000" transform="rotate(110)" transform-origin="center"></rect>
+            <animateTransform xlink:href="#rect11" attributeName="transform" type="rotate" from="0" to="110" dur="15s" begin="0s" fill="freeze" repeatCount="indefinite" values="-110; 110; -110"></animateTransform>
+            <rect id="rect12" x="150" y="150" width="100" height="100" stroke="#0ff" fill="#000" transform="rotate(120)" transform-origin="center"></rect>
+            <animateTransform xlink:href="#rect12" attributeName="transform" type="rotate" from="0" to="120" dur="15s" begin="0s" fill="freeze" repeatCount="indefinite" values="-120; 120; -120"></animateTransform>
+            <rect id="rect13" x="162.5" y="162.5" width="75" height="75" stroke="#0ff" fill="#000" transform="rotate(130)" transform-origin="center"></rect>
+            <animateTransform xlink:href="#rect13" attributeName="transform" type="rotate" from="0" to="130" dur="15s" begin="0s" fill="freeze" repeatCount="indefinite" values="-130; 130; -130"></animateTransform>
+          </svg>
+        </a>
+        <h3>Animação</h3>
+      </article>
+    </section>
+  </div>
+
+  <div>
+    <h2>Formas, Desenhos e Movimentos - Circulos</h2>
+    <section>
+      <article>
+        <a class="canvas" href="svgs/draws-circle/circle-form.php" target="_blank">
+          <svg viewBox="0 0 300 300">
+            <circle 
+              cx="50%" 
+              cy="50%" 
+              r="110" 
+              fill="none"
+              stroke="#fff"
+            />
+          </svg>
+        </a>
+        <h3>Forma</h3>
+      </article>
+      <article>
+        <a class="canvas" href="svgs/draws-circle/circle-draw.php" target="_blank">
+          <svg viewBox="0 0 300 300">
+            <circle cx="50%" cy="50%" r="110" fill="#000" stroke="#f0f"></circle>
+            <circle cx="50%" cy="50%" r="100" fill="#000" stroke="#f0f"></circle>
+            <circle cx="50%" cy="50%" r="90" fill="#000" stroke="#f0f"></circle>
+            <circle cx="50%" cy="50%" r="80" fill="#000" stroke="#f0f"></circle>
+            <circle cx="50%" cy="50%" r="70" fill="#000" stroke="#f0f"></circle>
+            <circle cx="50%" cy="50%" r="60" fill="#000" stroke="#f0f"></circle>
+            <circle cx="50%" cy="50%" r="50" fill="#000" stroke="#f0f"></circle>
+            <circle cx="50%" cy="50%" r="40" fill="#000" stroke="#f0f"></circle>
+            <circle cx="50%" cy="50%" r="30" fill="#000" stroke="#f0f"></circle>
+            <circle cx="50%" cy="50%" r="20" fill="#000" stroke="#f0f"></circle>
+            <circle cx="50%" cy="50%" r="10" fill="#000" stroke="#f0f"></circle>
+            <circle cx="50%" cy="50%" r="0" fill="#000" stroke="#f0f"></circle>
+        </svg>
+        </a>
+        <h3>Desenho</h3>
+      </article>
+      <article>
+        <a class="canvas" href="svgs/draws-circle/circle-move.php" target="_blank">
+          <svg viewBox="0 0 300 300">
+            <circle cx="47%" cy="47%" r="110" fill="#000" stroke="#ff0"></circle>
+            <circle cx="44%" cy="44%" r="100" fill="#000" stroke="#ff0"></circle>
+            <circle cx="41%" cy="41%" r="90" fill="#000" stroke="#ff0"></circle>
+            <circle cx="38%" cy="38%" r="80" fill="#000" stroke="#ff0"></circle>
+            <circle cx="35%" cy="35%" r="70" fill="#000" stroke="#ff0"></circle>
+            <circle cx="32%" cy="32%" r="60" fill="#000" stroke="#ff0"></circle>
+            <circle cx="29%" cy="29%" r="50" fill="#000" stroke="#ff0"></circle>
+            <circle cx="26%" cy="26%" r="40" fill="#000" stroke="#ff0"></circle>
+            <circle cx="23%" cy="23%" r="30" fill="#000" stroke="#ff0"></circle>
+            <circle cx="20%" cy="20%" r="20" fill="#000" stroke="#ff0"></circle>
+            <circle cx="17%" cy="17%" r="10" fill="#000" stroke="#ff0"></circle>
+            <circle cx="14%" cy="14%" r="0" fill="#000" stroke="#ff0"></circle>
+        </svg>
+        </a>
+        <h3>Movimento</h3>
+      </article>
+      <article>
+        <a class="canvas" href="svgs/draws-circle/circle-animate.php" target="_blank">
+          <svg viewBox="0 0 300 300">
+            <circle cx="50%" cy="50%" r="120" fill="#000" stroke="#0ff" id="circle0"></circle>
+            <animate xlink:href="#circle0" attributeName="cx" dur="5s" begin="0s" fill="freeze" repeatCount="indefinite" values="50%; 50%; 50%"></animate>
+            <animate xlink:href="#circle0" attributeName="cy" dur="5s" begin="2s" fill="freeze" repeatCount="indefinite" values="50%; 50%; 50%"></animate>
+            
+            <circle cx="47%" cy="47%" r="110" fill="#000" stroke="#0ff" id="circle1"></circle>
+            <animate xlink:href="#circle1" attributeName="cx" dur="5s" begin="0s" fill="freeze" repeatCount="indefinite" values="47%; 55%; 47%"></animate>
+            <animate xlink:href="#circle1" attributeName="cy" dur="5s" begin="2s" fill="freeze" repeatCount="indefinite" values="47%; 54%; 47%"></animate>
+
+            <circle cx="44%" cy="44%" r="100" fill="#000" stroke="#0ff" id="circle2"></circle>
+            <animate xlink:href="#circle2" attributeName="cx" dur="5s" begin="0s" fill="freeze" repeatCount="indefinite" values="44%; 60%; 44%"></animate>
+            <animate xlink:href="#circle2" attributeName="cy" dur="5s" begin="2s" fill="freeze" repeatCount="indefinite" values="44%; 58%; 44%"></animate>
+
+            <circle cx="41%" cy="41%" r="90" fill="#000" stroke="#0ff" id="circle3"></circle>
+            <animate xlink:href="#circle3" attributeName="cx" dur="5s" begin="0s" fill="freeze" repeatCount="indefinite" values="41%; 65%; 41%"></animate>
+            <animate xlink:href="#circle3" attributeName="cy" dur="5s" begin="2s" fill="freeze" repeatCount="indefinite" values="41%; 62%; 41%"></animate>
+
+            <circle cx="38%" cy="38%" r="80" fill="#000" stroke="#0ff" id="circle4"></circle>
+            <animate xlink:href="#circle4" attributeName="cx" dur="5s" begin="0s" fill="freeze" repeatCount="indefinite" values="38%; 70%; 38%"></animate>
+            <animate xlink:href="#circle4" attributeName="cy" dur="5s" begin="2s" fill="freeze" repeatCount="indefinite" values="38%; 66%; 38%"></animate>
+
+            <circle cx="35%" cy="35%" r="70" fill="#000" stroke="#0ff" id="circle5"></circle>
+            <animate xlink:href="#circle5" attributeName="cx" dur="5s" begin="0s" fill="freeze" repeatCount="indefinite" values="35%; 75%; 35%"></animate>
+            <animate xlink:href="#circle5" attributeName="cy" dur="5s" begin="2s" fill="freeze" repeatCount="indefinite" values="35%; 70%; 35%"></animate>
+
+            <circle cx="32%" cy="32%" r="60" fill="#000" stroke="#0ff" id="circle6"></circle>
+            <animate xlink:href="#circle6" attributeName="cx" dur="5s" begin="0s" fill="freeze" repeatCount="indefinite" values="32%; 80%; 32%"></animate>
+            <animate xlink:href="#circle6" attributeName="cy" dur="5s" begin="2s" fill="freeze" repeatCount="indefinite" values="32%; 74%; 32%"></animate>
+
+            <circle cx="29%" cy="29%" r="50" fill="#000" stroke="#0ff" id="circle7"></circle>
+            <animate xlink:href="#circle7" attributeName="cx" dur="5s" begin="0s" fill="freeze" repeatCount="indefinite" values="29%; 85%; 29%"></animate>
+            <animate xlink:href="#circle7" attributeName="cy" dur="5s" begin="2s" fill="freeze" repeatCount="indefinite" values="29%; 78%; 29%"></animate>
+
+            <circle cx="26%" cy="26%" r="40" fill="#000" stroke="#0ff" id="circle8"></circle>
+            <animate xlink:href="#circle8" attributeName="cx" dur="5s" begin="0s" fill="freeze" repeatCount="indefinite" values="26%; 90%; 26%"></animate>
+            <animate xlink:href="#circle8" attributeName="cy" dur="5s" begin="2s" fill="freeze" repeatCount="indefinite" values="26%; 82%; 26%"></animate>
+
+            <circle cx="23%" cy="23%" r="30" fill="#000" stroke="#0ff" id="circle9"></circle>
+            <animate xlink:href="#circle9" attributeName="cx" dur="5s" begin="0s" fill="freeze" repeatCount="indefinite" values="23%; 95%; 23%"></animate>
+            <animate xlink:href="#circle9" attributeName="cy" dur="5s" begin="2s" fill="freeze" repeatCount="indefinite" values="23%; 86%; 23%"></animate>
+
+            <circle cx="20%" cy="20%" r="20" fill="#000" stroke="#0ff" id="circle10"></circle>
+            <animate xlink:href="#circle10" attributeName="cx" dur="5s" begin="0s" fill="freeze" repeatCount="indefinite" values="20%; 100%; 20%"></animate>
+            <animate xlink:href="#circle10" attributeName="cy" dur="5s" begin="2s" fill="freeze" repeatCount="indefinite" values="20%; 90%; 20%"></animate>
+  
+            <circle cx="17%" cy="17%" r="10" fill="#000" stroke="#0ff" id="circle11"></circle>
+            <animate xlink:href="#circle11" attributeName="cx" dur="5s" begin="0s" fill="freeze" repeatCount="indefinite" values="17%; 105%; 17%"></animate>
+            <animate xlink:href="#circle11" attributeName="cy" dur="5s" begin="2s" fill="freeze" repeatCount="indefinite" values="17%; 94%; 17%"></animate>
+
+            <circle cx="14%" cy="14%" r="0" fill="#000" stroke="#0ff" id="circle12"></circle>
+            <animate xlink:href="#circle12" attributeName="cx" dur="5s" begin="0s" fill="freeze" repeatCount="indefinite" values="14%; 110%; 14%"></animate>
+            <animate xlink:href="#circle12" attributeName="cy" dur="5s" begin="2s" fill="freeze" repeatCount="indefinite" values="14%; 98%; 14%"></animate>
+          </svg>
+        </a>
+        <h3>Animação</h3>
+      </article>
+    </section>
+  </div>
+
+  <div>
+    <h2>Formas, Desenhos e Movimentos - Ellipse</h2>
+    <section>
+      <article>
+        <a class="canvas" href="svgs/draws-ellipse/ellipse-form.php" target="_blank">
+          <svg viewBox="0 0 300 300">
+            <ellipse 
+              cx="50%"
+              cy="90%"
+              rx="90"
+              ry="20"
+              stroke="#fff"
+            />
+          </svg>
+        </a>
+        <h3>Forma</h3>
+      </article>
+      <article>
+        <a class="canvas" href="svgs/draws-ellipse/ellipse-draw.php" target="_blank">
+          <svg viewBox="0 0 300 300">
+            <ellipse cx="50%" cy="90%" rx="80" ry="18" stroke="#f0f" fill="none"></ellipse>
+            <ellipse cx="50%" cy="85%" rx="70" ry="16" stroke="#f0f" fill="none"></ellipse>
+            <ellipse cx="50%" cy="80%" rx="60" ry="14" stroke="#f0f" fill="none"></ellipse>
+            <ellipse cx="50%" cy="75%" rx="50" ry="12" stroke="#f0f" fill="none"></ellipse>
+            <ellipse cx="50%" cy="70%" rx="40" ry="10" stroke="#f0f" fill="none"></ellipse>
+            <ellipse cx="50%" cy="65%" rx="30" ry="8" stroke="#f0f" fill="none"></ellipse>
+            <ellipse cx="50%" cy="60%" rx="20" ry="6" stroke="#f0f" fill="none"></ellipse>
+            <ellipse cx="50%" cy="55%" rx="20" ry="6" stroke="#f0f" fill="none"></ellipse>
+            <ellipse cx="50%" cy="50%" rx="30" ry="8" stroke="#f0f" fill="none"></ellipse>
+            <ellipse cx="50%" cy="45%" rx="40" ry="10" stroke="#f0f" fill="none"></ellipse>
+            <ellipse cx="50%" cy="40%" rx="50" ry="12" stroke="#f0f" fill="none"></ellipse>
+            <ellipse cx="50%" cy="35%" rx="60" ry="14" stroke="#f0f" fill="none"></ellipse>
+            <ellipse cx="50%" cy="30%" rx="70" ry="16" stroke="#f0f" fill="none"></ellipse>
+            <ellipse cx="50%" cy="25%" rx="80" ry="18" stroke="#f0f" fill="none"></ellipse>
+          </svg>
+        </a>
+        <h3>Desenho</h3>
+      </article>
+      <article>
+        <a class="canvas" href="svgs/draws-ellipse/ellipse-move.php" target="_blank">
+          <svg viewBox="0 0 300 300">
+            <ellipse cx="50%" cy="90%" rx="80" ry="18" stroke="#ff0" fill="none" id="ellipsebottom1"></ellipse>
+            <animate xlink:href="#ellipsebottom1" attributeName="cy" from="90%" to="90%" dur="5s" begin="0.2s" fill="freeze" repeatCount="indefinite" values="90%; 90%; 92%; 90%"></animate>
+            
+            <ellipse cx="50%" cy="85%" rx="70" ry="16" stroke="#ff0" fill="none" id="ellipsebottom2"></ellipse>
+            <animate xlink:href="#ellipsebottom2" attributeName="cy" from="85%" to="90%" dur="5s" begin="0.4s" fill="freeze" repeatCount="indefinite" values="85%; 90%; 92%; 85%"></animate>
+            
+            <ellipse cx="50%" cy="80%" rx="60" ry="14" stroke="#ff0" fill="none" id="ellipsebottom3"></ellipse>
+            <animate xlink:href="#ellipsebottom3" attributeName="cy" from="80%" to="90%" dur="5s" begin="0.6s" fill="freeze" repeatCount="indefinite" values="80%; 90%; 92%; 80%"></animate>
+            
+            <ellipse cx="50%" cy="75%" rx="50" ry="12" stroke="#ff0" fill="none" id="ellipsebottom4"></ellipse>
+            <animate xlink:href="#ellipsebottom4" attributeName="cy" from="75%" to="90%" dur="5s" begin="0.8s" fill="freeze" repeatCount="indefinite" values="75%; 90%; 92%; 75%"></animate>
+            
+            <ellipse cx="50%" cy="70%" rx="40" ry="10" stroke="#ff0" fill="none" id="ellipsebottom5"></ellipse>
+            <animate xlink:href="#ellipsebottom5" attributeName="cy" from="70%" to="90%" dur="5s" begin="1s" fill="freeze" repeatCount="indefinite" values="70%; 90%; 92%; 70%"></animate>
+            
+            <ellipse cx="50%" cy="65%" rx="30" ry="8" stroke="#ff0" fill="none" id="ellipsebottom6"></ellipse>
+            <animate xlink:href="#ellipsebottom6" attributeName="cy" from="65%" to="90%" dur="5s" begin="1.2s" fill="freeze" repeatCount="indefinite" values="65%; 90%; 92%; 65%"></animate>
+            
+            <ellipse cx="50%" cy="60%" rx="20" ry="6" stroke="#ff0" fill="none" id="ellipsebottom7"></ellipse>
+            <animate xlink:href="#ellipsebottom7" attributeName="cy" from="60%" to="90%" dur="5s" begin="1.4s" fill="freeze" repeatCount="indefinite" values="60%; 90%; 92%; 60%"></animate>
+            
+            <ellipse cx="50%" cy="55%" rx="20" ry="6" stroke="#ff0" fill="none" id="ellipsetop1"></ellipse>
+            <animate xlink:href="#ellipsetop1" attributeName="cy" from="55%" to="10%" dur="5s" begin="0.2s" fill="freeze" repeatCount="indefinite" values="55%; 10%; 12%; 55%"></animate>
+            
+           <ellipse cx="50%" cy="50%" rx="30" ry="8" stroke="#ff0" fill="none" id="ellipsetop2"></ellipse>
+            <animate xlink:href="#ellipsetop2" attributeName="cy" from="50%" to="10%" dur="5s" begin="0.4s" fill="freeze" repeatCount="indefinite" values="50%; 10%; 12%; 50%"></animate>
+            
+            <ellipse cx="50%" cy="45%" rx="40" ry="10" stroke="#ff0" fill="none" id="ellipsetop3"></ellipse>
+            <animate xlink:href="#ellipsetop3" attributeName="cy" from="45%" to="10%" dur="5s" begin="0.6s" fill="freeze" repeatCount="indefinite" values="45%; 10%; 12%; 45%"></animate>
+            
+            <ellipse cx="50%" cy="40%" rx="50" ry="12" stroke="#ff0" fill="none" id="ellipsetop4"></ellipse>
+            <animate xlink:href="#ellipsetop4" attributeName="cy" from="40%" to="10%" dur="5s" begin="0.8s" fill="freeze" repeatCount="indefinite" values="40%; 10%; 12%; 40%"></animate>
+            
+            <ellipse cx="50%" cy="35%" rx="60" ry="14" stroke="#ff0" fill="none" id="ellipsetop5"></ellipse>
+            <animate xlink:href="#ellipsetop5" attributeName="cy" from="35%" to="10%" dur="5s" begin="1s" fill="freeze" repeatCount="indefinite" values="35%; 10%; 12%; 35%"></animate>
+            
+            <ellipse cx="50%" cy="30%" rx="70" ry="16" stroke="#ff0" fill="none" id="ellipsetop6"></ellipse>
+            <animate xlink:href="#ellipsetop6" attributeName="cy" from="30%" to="10%" dur="5s" begin="1.2s" fill="freeze" repeatCount="indefinite" values="30%; 10%; 12%; 30%"></animate>
+            
+            <ellipse cx="50%" cy="25%" rx="80" ry="18" stroke="#ff0" fill="none" id="ellipsetop7"></ellipse>
+            <animate xlink:href="#ellipsetop7" attributeName="cy" from="25%" to="10%" dur="5s" begin="1.4s" fill="freeze" repeatCount="indefinite" values="25%; 10%; 12%; 25%"></animate>
+          </svg>
+        </a>
+        <h3>Movimento</h3>
+      </article>
+      <article>
+        <a class="canvas" href="svgs/draws-ellipse/ellipse-animate.php" target="_blank">
+          <svg viewBox="0 0 300 300">
+            <ellipse cx="50%" cy="90%" rx="80" ry="18" stroke="#0ff" fill="none" id="ellipsebottom21"></ellipse>
+            <animate xlink:href="#ellipsebottom21" attributeName="cy" from="90%" to="90%" dur="5s" begin="0.2s" fill="freeze" repeatCount="indefinite" values="90%; 90%; 92%; 90%"></animate>
+            <ellipse cx="50%" cy="85%" rx="70" ry="16" stroke="#0ff" fill="none" id="ellipsebottom22"></ellipse>
+            <animate xlink:href="#ellipsebottom22" attributeName="cy" from="85%" to="90%" dur="5s" begin="0.4s" fill="freeze" repeatCount="indefinite" values="85%; 90%; 92%; 85%"></animate>
+            <ellipse cx="50%" cy="80%" rx="60" ry="14" stroke="#0ff" fill="none" id="ellipsebottom23"></ellipse>
+            <animate xlink:href="#ellipsebottom23" attributeName="cy" from="80%" to="90%" dur="5s" begin="0.6s" fill="freeze" repeatCount="indefinite" values="80%; 90%; 92%; 80%"></animate>
+            <ellipse cx="50%" cy="75%" rx="50" ry="12" stroke="#0ff" fill="none" id="ellipsebottom24"></ellipse>
+            <animate xlink:href="#ellipsebottom24" attributeName="cy" from="75%" to="90%" dur="5s" begin="0.8s" fill="freeze" repeatCount="indefinite" values="75%; 90%; 92%; 75%"></animate>
+            <ellipse cx="50%" cy="70%" rx="40" ry="10" stroke="#0ff" fill="none" id="ellipsebottom25"></ellipse>
+            <animate xlink:href="#ellipsebottom25" attributeName="cy" from="70%" to="90%" dur="5s" begin="1s" fill="freeze" repeatCount="indefinite" values="70%; 90%; 92%; 70%"></animate>
+            <ellipse cx="50%" cy="65%" rx="30" ry="8" stroke="#0ff" fill="none" id="ellipsebottom26"></ellipse>
+            <animate xlink:href="#ellipsebottom26" attributeName="cy" from="65%" to="90%" dur="5s" begin="1.2s" fill="freeze" repeatCount="indefinite" values="65%; 90%; 92%; 65%"></animate>
+            <ellipse cx="50%" cy="60%" rx="20" ry="6" stroke="#0ff" fill="none" id="ellipsebottom27"></ellipse>
+            <animate xlink:href="#ellipsebottom27" attributeName="cy" from="60%" to="90%" dur="5s" begin="1.4s" fill="freeze" repeatCount="indefinite" values="60%; 90%; 92%; 60%"></animate>
+            <ellipse cx="50%" cy="55%" rx="20" ry="6" stroke="#0ff" fill="none" id="ellipsetop21"></ellipse>
+            <animate xlink:href="#ellipsetop21" attributeName="cy" from="55%" to="90%" dur="5s" begin="0.2s" fill="freeze" repeatCount="indefinite" values="55%; 90%; 92%; 55%"></animate>
+            <ellipse cx="50%" cy="50%" rx="30" ry="8" stroke="#0ff" fill="none" id="ellipsetop22"></ellipse>
+            <animate xlink:href="#ellipsetop22" attributeName="cy" from="50%" to="90%" dur="5s" begin="0.4s" fill="freeze" repeatCount="indefinite" values="50%; 90%; 92%; 50%"></animate>
+            <ellipse cx="50%" cy="45%" rx="40" ry="10" stroke="#0ff" fill="none" id="ellipsetop23"></ellipse>
+            <animate xlink:href="#ellipsetop23" attributeName="cy" from="45%" to="90%" dur="5s" begin="0.6s" fill="freeze" repeatCount="indefinite" values="45%; 90%; 92%; 45%"></animate>
+            <ellipse cx="50%" cy="40%" rx="50" ry="12" stroke="#0ff" fill="none" id="ellipsetop24"></ellipse>
+            <animate xlink:href="#ellipsetop24" attributeName="cy" from="40%" to="90%" dur="5s" begin="0.8s" fill="freeze" repeatCount="indefinite" values="40%; 90%; 92%; 40%"></animate>
+            <ellipse cx="50%" cy="35%" rx="60" ry="14" stroke="#0ff" fill="none" id="ellipsetop25"></ellipse>
+            <animate xlink:href="#ellipsetop25" attributeName="cy" from="35%" to="90%" dur="5s" begin="1s" fill="freeze" repeatCount="indefinite" values="35%; 90%; 92%; 35%"></animate>
+            <ellipse cx="50%" cy="30%" rx="70" ry="16" stroke="#0ff" fill="none" id="ellipsetop26"></ellipse>
+            <animate xlink:href="#ellipsetop26" attributeName="cy" from="30%" to="90%" dur="5s" begin="1.2s" fill="freeze" repeatCount="indefinite" values="30%; 90%; 92%; 30%"></animate>
+            <ellipse cx="50%" cy="25%" rx="80" ry="18" stroke="#0ff" fill="none" id="ellipsetop27"></ellipse>
+            <animate xlink:href="#ellipsetop27" attributeName="cy" from="25%" to="90%" dur="5s" begin="1.4s" fill="freeze" repeatCount="indefinite" values="25%; 90%; 92%; 25%"></animate>
+          </svg>
+        </a>
+        <h3>Animação</h3>
+      </article>
+    </section>
+  </div>
+
+  <div>
+    <h2>Formas, Desenhos e Movimentos - Linha</h2>
+    <section>
+      <article>
+        <a class="canvas" href="svgs/draws-line/line-form.php" target="_blank">
+          <svg viewBox="0 0 300 300">
+            <line
+              x1="10%"
+              y1="50%"
+              x2="90%"
+              y2="50%"
+              stroke="#fff" 
+            />
+          </svg>
+        </a>
+        <h3>Forma</h3>
+      </article>
+      <article>
+        <a class="canvas" href="svgs/draws-line/line-draw.php" target="_blank">
+          <svg viewBox="0 0 300 300">
+            <line x1="10%" y1="50%" x2="90%" y2="50%" stroke="#f0f" transform="rotate(0)" ;="" transform-origin="center"></line>
+            <line x1="10%" y1="50%" x2="90%" y2="50%" stroke="#f0f" transform="rotate(15)" ;="" transform-origin="center"></line>
+            <line x1="10%" y1="50%" x2="90%" y2="50%" stroke="#f0f" transform="rotate(30)" ;="" transform-origin="center"></line>
+            <line x1="10%" y1="50%" x2="90%" y2="50%" stroke="#f0f" transform="rotate(45)" ;="" transform-origin="center"></line>
+            <line x1="10%" y1="50%" x2="90%" y2="50%" stroke="#f0f" transform="rotate(60)" ;="" transform-origin="center"></line>
+            <line x1="10%" y1="50%" x2="90%" y2="50%" stroke="#f0f" transform="rotate(75)" ;="" transform-origin="center"></line>
+            <line x1="10%" y1="50%" x2="90%" y2="50%" stroke="#f0f" transform="rotate(90)" ;="" transform-origin="center"></line>
+            <line x1="10%" y1="50%" x2="90%" y2="50%" stroke="#f0f" transform="rotate(105)" ;="" transform-origin="center"></line>
+            <line x1="10%" y1="50%" x2="90%" y2="50%" stroke="#f0f" transform="rotate(120)" ;="" transform-origin="center"></line>
+            <line x1="10%" y1="50%" x2="90%" y2="50%" stroke="#f0f" transform="rotate(135)" ;="" transform-origin="center"></line>
+            <line x1="10%" y1="50%" x2="90%" y2="50%" stroke="#f0f" transform="rotate(150)" ;="" transform-origin="center"></line>
+            <line x1="10%" y1="50%" x2="90%" y2="50%" stroke="#f0f" transform="rotate(165)" ;="" transform-origin="center"></line>
+            <line x1="10%" y1="50%" x2="90%" y2="50%" stroke="#f0f" transform="rotate(180)" ;="" transform-origin="center"></line>
+            <line x1="10%" y1="50%" x2="90%" y2="50%" stroke="#f0f" transform="rotate(195)" ;="" transform-origin="center"></line>
+            <line x1="10%" y1="50%" x2="90%" y2="50%" stroke="#f0f" transform="rotate(210)" ;="" transform-origin="center"></line>
+            <line x1="10%" y1="50%" x2="90%" y2="50%" stroke="#f0f" transform="rotate(225)" ;="" transform-origin="center"></line>
+            <line x1="10%" y1="50%" x2="90%" y2="50%" stroke="#f0f" transform="rotate(240)" ;="" transform-origin="center"></line>
+            <line x1="10%" y1="50%" x2="90%" y2="50%" stroke="#f0f" transform="rotate(255)" ;="" transform-origin="center"></line>
+            <line x1="10%" y1="50%" x2="90%" y2="50%" stroke="#f0f" transform="rotate(270)" ;="" transform-origin="center"></line>
+            <line x1="10%" y1="50%" x2="90%" y2="50%" stroke="#f0f" transform="rotate(285)" ;="" transform-origin="center"></line>
+            <line x1="10%" y1="50%" x2="90%" y2="50%" stroke="#f0f" transform="rotate(300)" ;="" transform-origin="center"></line>
+            <line x1="10%" y1="50%" x2="90%" y2="50%" stroke="#f0f" transform="rotate(315)" ;="" transform-origin="center"></line>
+            <line x1="10%" y1="50%" x2="90%" y2="50%" stroke="#f0f" transform="rotate(330)" ;="" transform-origin="center"></line>
+            <line x1="10%" y1="50%" x2="90%" y2="50%" stroke="#f0f" transform="rotate(345)" ;="" transform-origin="center"></line>
+            <line x1="10%" y1="50%" x2="90%" y2="50%" stroke="#f0f" transform="rotate(360)" ;="" transform-origin="center"></line>
+        </svg>
+        </a>
+        <h3>Desenho</h3>
+      </article>
+      <article>
+        <a class="canvas" href="svgs/draws-line/line-move.php" target="_blank">
+          <svg viewBox="0 0 300 300">
+            <line x1="10%" y1="50%" x2="90%" y2="50%" stroke="#ff0" transform="rotate(15) translate(15, 0)" ;="" transform-origin="center"></line>
+            <line x1="10%" y1="50%" x2="90%" y2="50%" stroke="#ff0" transform="rotate(30) translate(30, 0)" ;="" transform-origin="center"></line>
+            <line x1="10%" y1="50%" x2="90%" y2="50%" stroke="#ff0" transform="rotate(45) translate(45, 0)" ;="" transform-origin="center"></line>
+            <line x1="10%" y1="50%" x2="90%" y2="50%" stroke="#ff0" transform="rotate(60) translate(60, 0)" ;="" transform-origin="center"></line>
+            <line x1="10%" y1="50%" x2="90%" y2="50%" stroke="#ff0" transform="rotate(75) translate(75, 0)" ;="" transform-origin="center"></line>
+            <line x1="10%" y1="50%" x2="90%" y2="50%" stroke="#ff0" transform="rotate(90) translate(90, 0)" ;="" transform-origin="center"></line>
+            <line x1="10%" y1="50%" x2="90%" y2="50%" stroke="#ff0" transform="rotate(105) translate(105, 0)" ;="" transform-origin="center"></line>
+            <line x1="10%" y1="50%" x2="90%" y2="50%" stroke="#ff0" transform="rotate(120) translate(120, 0)" ;="" transform-origin="center"></line>
+            <line x1="10%" y1="50%" x2="90%" y2="50%" stroke="#ff0" transform="rotate(135) translate(135, 0)" ;="" transform-origin="center"></line>
+            <line x1="10%" y1="50%" x2="90%" y2="50%" stroke="#ff0" transform="rotate(150) translate(150, 0)" ;="" transform-origin="center"></line>
+            <line x1="10%" y1="50%" x2="90%" y2="50%" stroke="#ff0" transform="rotate(165) translate(165, 0)" ;="" transform-origin="center"></line>
+            <line x1="10%" y1="50%" x2="90%" y2="50%" stroke="#ff0" transform="rotate(180) translate(180, 0)" ;="" transform-origin="center"></line>
+            <line x1="10%" y1="50%" x2="90%" y2="50%" stroke="#ff0" transform="rotate(195) translate(195, 0)" ;="" transform-origin="center"></line>
+            <line x1="10%" y1="50%" x2="90%" y2="50%" stroke="#ff0" transform="rotate(210) translate(210, 0)" ;="" transform-origin="center"></line>
+            <line x1="10%" y1="50%" x2="90%" y2="50%" stroke="#ff0" transform="rotate(225) translate(225, 0)" ;="" transform-origin="center"></line>
+            <line x1="10%" y1="50%" x2="90%" y2="50%" stroke="#ff0" transform="rotate(240) translate(240, 0)" ;="" transform-origin="center"></line>
+            <line x1="10%" y1="50%" x2="90%" y2="50%" stroke="#ff0" transform="rotate(255) translate(255, 0)" ;="" transform-origin="center"></line>
+            <line x1="10%" y1="50%" x2="90%" y2="50%" stroke="#ff0" transform="rotate(270) translate(270, 0)" ;="" transform-origin="center"></line>
+            <line x1="10%" y1="50%" x2="90%" y2="50%" stroke="#ff0" transform="rotate(285) translate(285, 0)" ;="" transform-origin="center"></line>
+            <line x1="10%" y1="50%" x2="90%" y2="50%" stroke="#ff0" transform="rotate(300) translate(300, 0)" ;="" transform-origin="center"></line>
+            <line x1="10%" y1="50%" x2="90%" y2="50%" stroke="#ff0" transform="rotate(315) translate(315, 0)" ;="" transform-origin="center"></line>
+            <line x1="10%" y1="50%" x2="90%" y2="50%" stroke="#ff0" transform="rotate(330) translate(330, 0)" ;="" transform-origin="center"></line>
+            <line x1="10%" y1="50%" x2="90%" y2="50%" stroke="#ff0" transform="rotate(345) translate(345, 0)" ;="" transform-origin="center"></line>
+            <line x1="10%" y1="50%" x2="90%" y2="50%" stroke="#ff0" transform="rotate(360) translate(360, 0)" ;="" transform-origin="center"></line>
+        </svg>
+        </a>
+        <h3>Movimento</h3>
+      </article>
+      <article>
+        <a class="canvas" href="svgs/draws-line/line-animate.php" target="_blank">
+          <svg viewBox="0 0 300 300">
+            <line x1="10%" y1="50%" x2="90%" y2="50%" stroke="#0ff" transform="rotate(0)" ;="" transform-origin="center" id="line21"></line>
+            <animateTransform xlink:href="#line21" attributeName="transform" type="rotate" dur="5s" begin="0s" fill="freeze" repeatCount="indefinite" values="15; 0; 0; 15"></animateTransform>
+            <line x1="10%" y1="50%" x2="90%" y2="50%" stroke="#0ff" transform="rotate(0)" ;="" transform-origin="center" id="line22"></line>
+            <animateTransform xlink:href="#line22" attributeName="transform" type="rotate" dur="5s" begin="0s" fill="freeze" repeatCount="indefinite" values="30; 0; 0; 30"></animateTransform>
+            <line x1="10%" y1="50%" x2="90%" y2="50%" stroke="#0ff" transform="rotate(0)" ;="" transform-origin="center" id="line23"></line>
+            <animateTransform xlink:href="#line23" attributeName="transform" type="rotate" dur="5s" begin="0s" fill="freeze" repeatCount="indefinite" values="45; 0; 0; 45"></animateTransform>
+            <line x1="10%" y1="50%" x2="90%" y2="50%" stroke="#0ff" transform="rotate(0)" ;="" transform-origin="center" id="line24"></line>
+            <animateTransform xlink:href="#line24" attributeName="transform" type="rotate" dur="5s" begin="0s" fill="freeze" repeatCount="indefinite" values="60; 0; 0; 60"></animateTransform>
+            <line x1="10%" y1="50%" x2="90%" y2="50%" stroke="#0ff" transform="rotate(0)" ;="" transform-origin="center" id="line25"></line>
+            <animateTransform xlink:href="#line25" attributeName="transform" type="rotate" dur="5s" begin="0s" fill="freeze" repeatCount="indefinite" values="75; 0; 0; 75"></animateTransform>
+            <line x1="10%" y1="50%" x2="90%" y2="50%" stroke="#0ff" transform="rotate(0)" ;="" transform-origin="center" id="line26"></line>
+            <animateTransform xlink:href="#line26" attributeName="transform" type="rotate" dur="5s" begin="0s" fill="freeze" repeatCount="indefinite" values="90; 0; 0; 90"></animateTransform>
+            <line x1="10%" y1="50%" x2="90%" y2="50%" stroke="#0ff" transform="rotate(0)" ;="" transform-origin="center" id="line27"></line>
+            <animateTransform xlink:href="#line27" attributeName="transform" type="rotate" dur="5s" begin="0s" fill="freeze" repeatCount="indefinite" values="105; 0; 0; 105"></animateTransform>
+            <line x1="10%" y1="50%" x2="90%" y2="50%" stroke="#0ff" transform="rotate(0)" ;="" transform-origin="center" id="line28"></line>
+            <animateTransform xlink:href="#line28" attributeName="transform" type="rotate" dur="5s" begin="0s" fill="freeze" repeatCount="indefinite" values="120; 0; 0; 120"></animateTransform>
+            <line x1="10%" y1="50%" x2="90%" y2="50%" stroke="#0ff" transform="rotate(0)" ;="" transform-origin="center" id="line29"></line>
+            <animateTransform xlink:href="#line29" attributeName="transform" type="rotate" dur="5s" begin="0s" fill="freeze" repeatCount="indefinite" values="135; 0; 0; 135"></animateTransform>
+            <line x1="10%" y1="50%" x2="90%" y2="50%" stroke="#0ff" transform="rotate(0)" ;="" transform-origin="center" id="line210"></line>
+            <animateTransform xlink:href="#line210" attributeName="transform" type="rotate" dur="5s" begin="0s" fill="freeze" repeatCount="indefinite" values="150; 0; 0; 150"></animateTransform>
+            <line x1="10%" y1="50%" x2="90%" y2="50%" stroke="#0ff" transform="rotate(0)" ;="" transform-origin="center" id="line211"></line>
+            <animateTransform xlink:href="#line211" attributeName="transform" type="rotate" dur="5s" begin="0s" fill="freeze" repeatCount="indefinite" values="165; 0; 0; 165"></animateTransform>
+            <line x1="10%" y1="50%" x2="90%" y2="50%" stroke="#0ff" transform="rotate(0)" ;="" transform-origin="center" id="line212"></line>
+            <animateTransform xlink:href="#line212" attributeName="transform" type="rotate" dur="5s" begin="0s" fill="freeze" repeatCount="indefinite" values="180; 0; 0; 180"></animateTransform>
+            <line x1="10%" y1="50%" x2="90%" y2="50%" stroke="#0ff" transform="rotate(0)" ;="" transform-origin="center" id="line213"></line>
+            <animateTransform xlink:href="#line213" attributeName="transform" type="rotate" dur="5s" begin="0s" fill="freeze" repeatCount="indefinite" values="195; 0; 0; 195"></animateTransform>
+            <line x1="10%" y1="50%" x2="90%" y2="50%" stroke="#0ff" transform="rotate(0)" ;="" transform-origin="center" id="line214"></line>
+            <animateTransform xlink:href="#line214" attributeName="transform" type="rotate" dur="5s" begin="0s" fill="freeze" repeatCount="indefinite" values="210; 0; 0; 210"></animateTransform>
+            <line x1="10%" y1="50%" x2="90%" y2="50%" stroke="#0ff" transform="rotate(0)" ;="" transform-origin="center" id="line215"></line>
+            <animateTransform xlink:href="#line215" attributeName="transform" type="rotate" dur="5s" begin="0s" fill="freeze" repeatCount="indefinite" values="225; 0; 0; 225"></animateTransform>
+            <line x1="10%" y1="50%" x2="90%" y2="50%" stroke="#0ff" transform="rotate(0)" ;="" transform-origin="center" id="line216"></line>
+            <animateTransform xlink:href="#line216" attributeName="transform" type="rotate" dur="5s" begin="0s" fill="freeze" repeatCount="indefinite" values="240; 0; 0; 240"></animateTransform>
+            <line x1="10%" y1="50%" x2="90%" y2="50%" stroke="#0ff" transform="rotate(0)" ;="" transform-origin="center" id="line217"></line>
+            <animateTransform xlink:href="#line217" attributeName="transform" type="rotate" dur="5s" begin="0s" fill="freeze" repeatCount="indefinite" values="255; 0; 0; 255"></animateTransform>
+            <line x1="10%" y1="50%" x2="90%" y2="50%" stroke="#0ff" transform="rotate(0)" ;="" transform-origin="center" id="line218"></line>
+            <animateTransform xlink:href="#line218" attributeName="transform" type="rotate" dur="5s" begin="0s" fill="freeze" repeatCount="indefinite" values="270; 0; 0; 270"></animateTransform>
+            <line x1="10%" y1="50%" x2="90%" y2="50%" stroke="#0ff" transform="rotate(0)" ;="" transform-origin="center" id="line219"></line>
+            <animateTransform xlink:href="#line219" attributeName="transform" type="rotate" dur="5s" begin="0s" fill="freeze" repeatCount="indefinite" values="285; 0; 0; 285"></animateTransform>
+            <line x1="10%" y1="50%" x2="90%" y2="50%" stroke="#0ff" transform="rotate(0)" ;="" transform-origin="center" id="line220"></line>
+            <animateTransform xlink:href="#line220" attributeName="transform" type="rotate" dur="5s" begin="0s" fill="freeze" repeatCount="indefinite" values="300; 0; 0; 300"></animateTransform>
+            <line x1="10%" y1="50%" x2="90%" y2="50%" stroke="#0ff" transform="rotate(0)" ;="" transform-origin="center" id="line221"></line>
+            <animateTransform xlink:href="#line221" attributeName="transform" type="rotate" dur="5s" begin="0s" fill="freeze" repeatCount="indefinite" values="315; 0; 0; 315"></animateTransform>
+            <line x1="10%" y1="50%" x2="90%" y2="50%" stroke="#0ff" transform="rotate(0)" ;="" transform-origin="center" id="line222"></line>
+            <animateTransform xlink:href="#line222" attributeName="transform" type="rotate" dur="5s" begin="0s" fill="freeze" repeatCount="indefinite" values="330; 0; 0; 330"></animateTransform>
+            <line x1="10%" y1="50%" x2="90%" y2="50%" stroke="#0ff" transform="rotate(0)" ;="" transform-origin="center" id="line223"></line>
+            <animateTransform xlink:href="#line223" attributeName="transform" type="rotate" dur="5s" begin="0s" fill="freeze" repeatCount="indefinite" values="345; 0; 0; 345"></animateTransform>
+            <line x1="10%" y1="50%" x2="90%" y2="50%" stroke="#0ff" transform="rotate(0)" ;="" transform-origin="center" id="line224"></line>
+            <animateTransform xlink:href="#line224" attributeName="transform" type="rotate" dur="5s" begin="0s" fill="freeze" repeatCount="indefinite" values="360; 0; 0; 360"></animateTransform>
+          </svg>
+        </a>
+        <h3>Animação</h3>
+      </article>
+    </section>
+  </div>
+</body>
+</html>
